@@ -3,6 +3,7 @@
 <head>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="js/player.js"></script>
+  <script src="js/some.js"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -10,70 +11,67 @@
   <title>Music</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="logo1.gif" width="130" height="100" alt="">
+      </a>
+      <a class="navbar-brand" href="#"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="music.html">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="texts.html">Texts</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
 
 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-<a class="navbar-brand" href="#">
-    <img src="logo1.gif" width="130" height="100" alt="">
-  </a>
-  <a class="navbar-brand" href="#"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="music.html">Music</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="texts.html">Texts</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-
-
-
-<div class="container mr-auto"  style="margin-top: 90px;">
-    <div class="column add-bottom">
-        <div id="mainwrap">
-            <div id="nowPlay">
-                <button type="button" id="btnPrev" class="btn btn-light mr-lg-0">Previous</button>
-                <button type="button" id="btnNext" class="btn btn-light mr-lg-0">Next</button>
-                <span class="left" id="npTitle"></span>
-            </div>
-            <div id="audiowrap">
-                <div id="audio0">
-                    <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+    <div class="container mr-auto"  style="margin-top: 90px;">
+        <div class="column add-bottom">
+            <div id="mainwrap">
+                <div id="nowPlay">
+                    <button type="button" id="btnPrev" class="btn btn-light mr-lg-0">Previous</button>
+                    <button type="button" id="btnNext" class="btn btn-light mr-lg-0">Next</button>
+                    <span class="left" id="npTitle"></span>
                 </div>
-            </div>
-            <div id="plwrap">
-                <ul id="plList"></ul>
+                <div id="audiowrap">
+                    <div id="audio0">
+                        <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+                    </div>
+                </div>
+                <div id="plwrap">
+                    <ul id="plList"></ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
-<footer class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
-  <div class="container-fluid font-weight-dark fixed-bottom">
-    <span>Powered by Kit Dmytro. IK-51</span>
-  </div>
-</footer>
+    <footer class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+      <div class="container-fluid font-weight-dark fixed-bottom">
+        <span>Powered by Kit Dmytro. IK-51</span>
+      </div>
+    </footer>
 
-  <script src="https://cdn.plyr.io/2.0.18/plyr.js"></script>
-  <script>plyr.setup();</script>
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script src="https://cdn.plyr.io/2.0.18/plyr.js"></script>
+      <script>plyr.setup();</script>
+      <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>

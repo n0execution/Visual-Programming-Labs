@@ -14,7 +14,7 @@ jQuery(function ($) {
         var index = 0,
             playing = false,
             // mediaPath = 'https://archive.org/download/mythium/',
-            mediaPath = '/home/kotik/git/site/music/',
+            mediaPath = '/home/kotik/git/Visual-Programming-Labs/site/music/',
             extension = '',
             tracks = [{
                 "track": 1,
