@@ -139,7 +139,7 @@ jQuery(function ($) {
                 loadTrack(id);
                 audio.play();
             };
-        extension = audio.canPlayType('audio/mpeg') ? '.mp3' : audio.canPlayType('audio/ogg') ? '.ogg' : '';
+        extension = '.mp3'//audio.canPlayType('audio/mpeg') ? '.mp3' : audio.canPlayType('audio/ogg') ? '.ogg' : '';
         loadTrack(index);
     // }
 });
@@ -149,3 +149,6 @@ plyr.setup($('#audio1'), {});
 
 $('.but').on('click', () => {
 $('.jumbotron').addClass('hide');  });
+
+
+$("body").css("background-color", "red")
